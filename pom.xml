@@ -53,6 +53,11 @@
       <artifactId>log4j</artifactId>
       <version>1.2.14</version>
     </dependency>
+    <dependency>
+      <groupId>commons-httpclient</groupId>
+      <artifactId>commons-httpclient</artifactId>
+      <version>3.1</version>
+    </dependency>
     <!-- Javaee API -->
 	<dependency>
       <groupId>jakarta.servlet</groupId>

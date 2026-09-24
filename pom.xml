@@ -4,7 +4,7 @@
   <groupId>net.oauth</groupId>
   <artifactId>oauth</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.1</version>
+  <version>2.0.1</version>
   <name>OAuth</name>
   <description>Modified OAuth library for LTI java integrations.</description>
 	
@@ -24,6 +24,16 @@
         <role>Developer</role>
       </roles>
       <timezone>-4</timezone>
+    </developer>
+    <developer>
+      <name>Leandro Vieira de Souza</name>
+      <email>leandro.vieiras@gmail.com</email>
+      <organization></organization>
+      <organizationUrl></organizationUrl>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>-3</timezone>
     </developer>
   </developers>
 
@@ -45,29 +55,22 @@
     </dependency>
     <!-- Javaee API -->
 	<dependency>
-      <groupId>javax</groupId>
-      <artifactId>javaee-api</artifactId>
-      <version>6.0</version>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>6.1.0</version>
       <scope>provided</scope>
 	</dependency>
   </dependencies>
-
-  <repositories>
-  	<repository>
- 		<id>Java.Net</id>
-  		<url>http://download.java.net/maven/2/</url>
-	</repository>
-  </repositories>
 
   <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>2.3.2</version>
+        <version>3.11.0</version>
         <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
+          <source>8</source>
+          <target>8</target>
         </configuration>
       </plugin>
       <plugin>
